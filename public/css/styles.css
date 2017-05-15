@@ -1,31 +1,67 @@
 * {
-	background: #F3F2F3;
+    background: #F3F2F3;
 }
 
 header {
-	background: #838283;
-	border-bottom: 10px solid #A5A4A5;
-	height: 150px;
+    background: #838283;
+    border-bottom: 10px solid #A5A4A5;
+    height: 150px;
+    color: white;
+    font-family: 'Bahiana', cursive;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: background 2s;
+    transition: background 2s;
+}
+
+header:hover {
+    background: red;
 }
 
 section {
-	background: #333333;
-	height: 400px;
-	width: 200px;
-	color: white;
-	float: left;
+    background: #333333;
+    height: 100px;
+    width: 100px;
+    color: white;
+    float: left;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+    font-family: 'Bahiana', cursive;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section:hover {
+    width: 330px;
+    height: 330px;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 aside {
-	background: #D2D0D2;
-	height: 400px;
-	width: 100%;
+    background: #D2D0D2;
+    height: 330px;
+    width: 100%;
+    font-family: 'Bahiana', cursive;
+    font-size: 350px;
 }
 
 footer {
-	background: #838283;
-	height: 150px;
-
-	clear: both;
+    background: #838283;
+    height: 150px;
+    width: 300px;
+    clear: both;
+    font-family: 'Bahiana', cursive;
+    font-size: 130px;
+    -webkit-transition: width 100%;
+    transition: 2s;
 }
 
+footer:hover {
+    width: 100%;
+    background: green;
+}
